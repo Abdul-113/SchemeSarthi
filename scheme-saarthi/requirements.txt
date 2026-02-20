@@ -1,0 +1,12 @@
+fastapi[standard]
+uvicorn
+langchain-community
+langchain-chroma
+langchain-huggingface
+langchain-ollama
+langchain-core
+pydantic
+streamlit
+requests
+chromadb
+langchain-ollama
