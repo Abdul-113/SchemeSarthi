@@ -1,11 +1,15 @@
 import os
+from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 
 # --- CONFIG ---
+# Load environment variables
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"))
+
 # Path to your existing database
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(CURRENT_DIR, "..", "chroma_db_data")
@@ -17,7 +21,7 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
 # --- 2. SETUP THE LLM (The Brain) ---
 
-llm = ChatOllama(model="llama3.2") 
+llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=os.getenv("GROQ_API_KEY")) 
 
 # --- 3. DEFINE THE PROMPT (The Instructions) ---
 # This tells the AI how to behave.
