@@ -11,7 +11,7 @@ requests
 chromadb
 python-dotenv
 groq
-gTTS
+edge-tts
 audio-recorder-streamlit
 psycopg2-binary
 PyPDF2

@@ -23,3 +23,11 @@ Thumbs.db
 
 # Environment variables
 .env
+
+*.env
+*.env.local
+*.log
+backend/debug.log
+backend/dummy.txt
+uploads/
+backend/uploads/

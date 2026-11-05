@@ -1,0 +1,27 @@
+scheme-saarthi@0.0.0 C:\Users\Haroo\OneDrive\Desktop\mini project\scheme-saarthi
++-- @eslint/js@9.39.3
++-- @headlessui/react@2.2.9
++-- @heroicons/react@2.2.0
++-- @types/react-dom@19.2.3
++-- @types/react@19.2.14
++-- @vitejs/plugin-react@5.1.4
++-- autoprefixer@10.4.24
++-- eslint-plugin-react-hooks@7.0.1
++-- eslint-plugin-react-refresh@0.4.26
++-- eslint@9.39.3
++-- framer-motion@12.34.3
++-- globals@16.5.0
++-- i18next@25.8.13
++-- lucide-react@0.575.0
++-- postcss@8.5.6
++-- react-confetti@6.4.0
++-- react-dom@19.2.4
++-- react-hook-form@7.71.2
++-- react-i18next@16.5.4
++-- react-router-dom@7.13.0
++-- react@19.2.4
++-- tailwindcss@3.4.19
++-- vite@7.3.1
++-- zod@4.3.6
+`-- zustand@5.0.11
+
